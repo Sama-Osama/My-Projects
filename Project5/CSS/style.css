@@ -1,0 +1,112 @@
+/* General CSS */
+* {
+    margin: 0;
+    padding: 0;
+}
+
+/* navbar */
+.navbar {
+    background-color: rgb(220, 20, 50);
+    padding: 20px;
+}
+
+.navbar .navlist li {
+    display: inline-block;
+    margin-left: 23px;
+}
+
+.navbar .navlist a {
+    text-decoration: none;
+    color: white;
+    font-size: 20px;
+}
+
+.navbar .navlist a:hover {
+    opacity: 0.7;
+}
+
+/* hero */
+
+.hero {
+    height: 90vh;
+    background-size: 100% 90vh;
+    padding: 20px;
+    background-repeat: no-repeat;
+    background-image: url(../Images/ecomm.jpg);
+}
+
+.hero h1 {
+    color: white;
+    padding-left: 20px;
+    padding-top: 2px;
+    font-size: 40px;
+    font-weight: bold;
+}
+
+/* products */
+
+.products {
+    margin-top: 130px;
+    margin-bottom: 20px;
+}
+
+.products h2 {
+    text-align: center;
+    font-weight: bold;
+    font-size: 35px;
+    margin-bottom: 60px;
+}
+
+
+.product {
+    width: 25%;
+    border: 2px solid rgb(161, 161, 161);
+    border-radius: 7px;
+    padding: 20px;
+    text-align: center;
+    display: inline-block;
+    margin-left: 60px;
+
+}
+
+.product img {
+    width: 50%;
+    border-radius: 50%;
+    border: solid 2px black;
+}
+
+.product .pro-title {
+    font-size: 30px;
+}
+
+.product.pro-description {
+    color: rgb(152, 147, 147);
+    font-size: 18px;
+    margin-bottom: 15px;
+    margin-top: 10px;
+    line-height: 1.4;
+}
+
+.product .pro-btn {
+    display: inline-block;
+    text-decoration: none;
+    color: white;
+    background-color: rgb(220, 20, 60);
+    padding: 10px 40px;
+    border-radius: 6px;
+    margin-top: 10px;
+
+}
+
+.product.pro-btn:hover {
+    opacity: 0.9;
+}
+
+/* footer */
+
+.footer {
+    text-align: center;
+    background-color: black;
+    padding: 25px;
+    color: white;
+}
