@@ -1,0 +1,131 @@
+.reviews {
+    width: 28%;
+    height: 40vh;
+    margin: auto;
+    background-color: black;
+    color: white;
+    text-align: center;
+    padding: 20px;
+    position: relative;
+    margin-top: 12%;
+    font-family: 'Lobster', cursive;
+    border-radius: 8%;
+}
+
+.reviews p {
+    font-size: 18px;
+}
+
+.reviews img {
+    width: 70%;
+    height: 130px;
+    border: 3px solid wheat;
+    border-radius: 50%;
+}
+
+.person {
+    width: 50%;
+    margin: auto;
+}
+
+.person p {
+    font-size: 20px;
+    font-weight: bold;
+}
+
+.btns {
+    width: 60%;
+    position: absolute;
+    top: 67%;
+    left: 20%;
+    /* background-color: aqua; */
+    display: inline-flex;
+    justify-content: space-between;
+
+}
+
+.prev,
+.next {
+    border-radius: 50%;
+    background-color: antiquewhite;
+    color: black;
+    font-size: 30px;
+    cursor: pointer;
+
+}
+
+#addNewBtn {
+    position: absolute;
+    top: 130%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    padding: 10px 20px;
+    background-color: black;
+    color: antiquewhite;
+    font-size: 20px;
+    font-style: bold;
+    border-radius: 8px;
+    cursor: pointer;
+
+}
+
+.addReview {
+    padding: 20px;
+    width: 50%;
+    text-align: center;
+    background-color: black;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    cursor: pointer;
+}
+
+.overlay {
+    position: fixed;
+    width: 100%;
+    height: 100%;
+    top: 0;
+    left: 0;
+    background-color: rgba(0, 0, 0, 0.7);
+    display: none;
+
+}
+
+input:not(input[type=sumbit]):not(input[type=button]),
+textarea {
+    display: block;
+    margin-bottom: 10px;
+    width: 100%;
+    border: none;
+    border-bottom: 2px solid gray;
+    outline: none;
+    background-color: transparent;
+    padding: 3px 2px;
+    color: white;
+}
+
+textarea {
+    height: 100px;
+}
+
+#sendDataBtn {
+    width: 20%;
+    background-color: wheat;
+    padding: 10px 20px;
+    color: black;
+    margin-left: 40%;
+    margin-top: 5%;
+    font-size: 20px;
+    border-radius: 8px;
+    cursor: pointer;
+}
+
+#closeFormBtn {
+    position: absolute;
+    bottom: 108%;
+    left: 0.5%;
+    background-color: crimson;
+    color: white;
+    cursor: pointer;
+}
