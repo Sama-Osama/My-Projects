@@ -1,0 +1,756 @@
+/* GENERAL CSS */
+* {
+    margin: 0;
+    padding: 0;
+
+}
+
+/* NAVBAR */
+
+.navbar {
+    background-color: rgb(136, 136, 136);
+    height: 10vh;
+    display: flex;
+    padding: 5px 20px;
+}
+
+.img1 {
+
+    width: 8%;
+    height: 8vh;
+    padding: 7px 75px;
+}
+
+.navbar .navlist li {
+    display: inline-block;
+    position: relative;
+    left: 85%;
+    padding: 20px 25px;
+}
+
+.navbar .navlist a {
+    text-decoration: none;
+    color: black;
+    font-size: 20px;
+}
+
+.navbar .navlist #home {
+    color: rgb(56, 133, 197);
+}
+
+/* HERO */
+
+.hero {
+    height: 80vh;
+    background-size: 100% 146vh;
+    background-image: linear-gradient(rgba(210, 158, 153, 0.1), rgba(0, 0, 0, 0.7)), url(../Images/back.jpg);
+    background-position: center;
+    margin-top: 0;
+    background-repeat: no-repeat;
+    margin-bottom: 80px;
+}
+
+.hero .head {
+    text-align: center;
+    color: white;
+    padding-top: 3%;
+    font-size: 65px;
+    font-weight: bold;
+
+}
+
+.hero p {
+    text-align: center;
+    color: white;
+    font-size: 18px;
+}
+
+.s1 {
+    color: rgb(29, 117, 169);
+}
+
+.btn1 {
+    background-color: white;
+    border-radius: 20px;
+    padding: 13px 33px;
+    margin-left: 45%;
+    margin-top: 5%;
+    border-color: transparent;
+}
+
+/* INFO */
+
+.d1 {
+    width: 25%;
+    padding: 20px;
+    text-align: center;
+    display: inline-block;
+    margin-left: 75px;
+    text-align: justify;
+    margin-bottom: 130px;
+}
+
+.d1 h1 {
+    color: rgb(13, 133, 202);
+    font-size: 35px;
+    margin-bottom: 8px;
+}
+
+
+
+.d1 p {
+    color: rgb(161, 145, 140);
+    margin-bottom: 30px;
+}
+
+.d2 {
+    padding: 2px 10px;
+}
+
+.d1 span {
+    color: reb(161. 145. 140);
+    position: relative;
+    bottom: 5px;
+}
+
+.fa-check {
+    color: rgb(13, 133, 202);
+    font-size: 25px;
+    font-weight: bold;
+    padding-top: 5px;
+}
+
+/* TITLE */
+
+.title h1 {
+    text-align: center;
+    font-size: 50px;
+    font-weight: bold;
+    margin-bottom: 15px;
+}
+
+.title p {
+    color: rgb(161, 145, 140);
+    text-align: center;
+    margin-bottom: 40px;
+}
+
+/* WORKS */
+.work {
+    width: 100%;
+    height: auto;
+    display: grid;
+    grid-template-columns: repeat(3, 33.33%);
+    grid-template-rows: repeat(2, 1fr);
+    margin-bottom: 50px;
+}
+
+.d3 {
+    text-align: center;
+    padding: 10px;
+}
+
+.d3 img {
+    width: 95%;
+    height: 100%;
+    object-fit: cover;
+}
+
+
+
+
+/* STRATGY */
+.str {
+    margin: auto;
+    width: 90%;
+    background-color: black;
+    color: white;
+    height: 470px;
+    display: grid;
+    grid-template-columns: repeat(2, 33.33%);
+    grid-template-rows: repeat(1, 50%);
+    margin-bottom: 80px;
+}
+
+.pic img {
+    width: 97%;
+    height: 60vh;
+    padding: 20px 20px;
+}
+
+.desc {
+    margin: auto;
+    width: 90%;
+    color: white;
+    height: 470px;
+    display: grid;
+    grid-template-columns: repeat(2, 60%);
+    grid-template-rows: repeat(2, 40%);
+    margin-bottom: 50px;
+    padding: 30px;
+}
+
+
+.des1 {
+    width: 95%;
+    padding: 10px 80px;
+    font-size: 20px;
+}
+
+.des2 {
+    width: 95%;
+    padding: 10px 30px;
+    font-size: 20px;
+    margin-left: 50%;
+}
+
+.des3 {
+    width: 95%;
+    padding: 10px 80px;
+    font-size: 20px;
+}
+
+.des4 {
+    width: 95%;
+    padding: 10px 40px;
+    font-size: 20px;
+    margin-left: 50%;
+}
+
+.desc a {
+    color: white;
+    font-size: 15px;
+}
+
+.desc p {
+    color: rgb(150, 145, 141);
+    font-size: 17px;
+}
+
+.des1 span {
+    margin-bottom: 10px;
+}
+
+.des1 p {
+    margin-top: 4%;
+    margin-bottom: 5%;
+}
+
+.des2 span {
+    margin-bottom: 10px;
+}
+
+.des2 p {
+    margin-top: 4%;
+    margin-bottom: 5%;
+}
+
+.des3 span {
+    margin-bottom: 10px;
+}
+
+.des3 p {
+    margin-top: 4%;
+    margin-bottom: 5%;
+
+}
+
+.des4 span {
+
+    margin-bottom: 10px;
+}
+
+.des4 p {
+    margin-top: 4%;
+    margin-bottom: 5%;
+}
+
+/* TESTIMONIALS */
+.test {
+    margin-bottom: 150px;
+}
+
+.test h1 {
+    text-align: center;
+    font-size: 50px;
+    font-weight: bold;
+    margin-bottom: 15px;
+}
+
+.test p {
+    color: rgb(161, 145, 140);
+    text-align: center;
+    margin-bottom: 60px;
+    font-size: 18px;
+}
+
+.test img {
+    width: 5%;
+    height: 10vh;
+    border-radius: 50%;
+    margin-left: 48%;
+    align-items: center;
+}
+
+.test span {
+    margin-left: 18px;
+    color: rgb(161, 145, 140);
+}
+
+.test div {
+    display: flex;
+    align-items: center;
+}
+
+/* SERVICES */
+
+.serh1 {
+    text-align: center;
+    font-size: 50px;
+    font-weight: bold;
+    margin-bottom: 50px;
+}
+
+.fa-display {
+    color: rgb(13, 133, 202);
+    font-size: 20px;
+}
+
+.ser {
+    width: 90%;
+    height: auto;
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    grid-template-rows: repeat(2, auto);
+    gap: 20px;
+    margin-left: 5%;
+    margin-bottom: 80px;
+}
+
+
+.d4 {
+    padding: 10px;
+}
+
+.ser span {
+    font-size: 18px;
+    font-weight: bold;
+    margin-left: 2%;
+}
+
+.ser p {
+    color: rgb(156, 164, 178);
+    margin-bottom: 20px;
+    margin-top: 10px;
+    margin-left: 7%;
+}
+
+.ser a {
+    text-decoration: none;
+    color: rgb(104, 156, 217);
+    margin-left: 7%;
+}
+
+/* ABOUT US */
+.about h1 {
+    font-size: 50px;
+    font-weight: bold;
+    margin-bottom: 20px;
+}
+
+.about-left p {
+    color: rgb(161, 145, 140);
+    margin-bottom: 30px;
+    /* Adjusted margin */
+    font-size: 23px;
+}
+
+.about {
+    margin: auto;
+    width: 90%;
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-start;
+    margin-bottom: 100px;
+}
+
+.about-left {
+    flex: 1;
+}
+
+.about-right {
+    flex: 1;
+    display: flex;
+    flex-direction: column;
+}
+
+.pic2 img {
+    width: 100%;
+    height: auto;
+}
+
+.about-grid {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 20px;
+}
+
+.about2,
+.about3 {
+    position: relative;
+    margin-top: 90px;
+    /* Added margin to create space */
+}
+
+.about2 a,
+.about3 a {
+    position: absolute;
+    bottom: 0;
+    text-decoration: none;
+    color: rgb(13, 133, 202);
+    font-size: 16px;
+}
+
+.about3 .fa-flip-horizontal {
+    font-size: 25px;
+    margin-bottom: 20px;
+    color: rgb(13, 133, 202);
+}
+
+.about2 .fa-display {
+    font-size: 25px;
+    margin-bottom: 20px;
+    color: rgb(13, 133, 202);
+}
+
+
+
+
+
+
+
+
+
+/* TEAM*/
+
+.team {
+    margin-bottom: 10px;
+    margin-right: 50px;
+}
+
+.team h1 {
+    font-size: 50px;
+    font-weight: bold;
+    margin-bottom: 30px;
+    text-align: center;
+}
+
+.team2 {
+    display: flex;
+    justify-content: center;
+    margin-bottom: 50px;
+    text-align: center;
+}
+
+.dteam {
+    width: 25%;
+    height: 40vh;
+    border-radius: 6px;
+    text-align: center;
+    padding: 20px 30px;
+    margin-left: 20px;
+}
+
+.img3 {
+    width: 40%;
+    border-radius: 50%;
+    margin-left: 30%;
+}
+
+.img4 {
+    height: 23vh;
+    width: 40%;
+    border-radius: 50%;
+}
+
+.team2 .name1 {
+    margin-top: 5%;
+    margin-bottom: 3%;
+    font-style: italic;
+    text-align: center;
+    color: rgb(121, 120, 119);
+}
+
+.team2 .name2 {
+    margin-top: 8%;
+    margin-bottom: 3%;
+    font-style: italic;
+    text-align: center;
+    color: rgb(121, 120, 119);
+}
+
+.team2 .name3 {
+    margin-top: 4%;
+    margin-bottom: 3%;
+    font-style: italic;
+    text-align: center;
+    color: rgb(121, 120, 119);
+}
+
+.team2 p {
+    text-align: justify;
+    font-size: 18px;
+    color: rgb(179, 176, 173);
+}
+
+.team2 .icon {
+    width: 15%;
+    height: 10vh;
+    padding: 10px 0px;
+    display: flex;
+    justify-content: center;
+    margin-bottom: 20%;
+    margin-left: 40%;
+}
+
+.team2 .icon .fa-facebook {
+    padding: 10px 10px;
+    color: rgb(121, 120, 119);
+    font-size: 25px;
+    margin-left: 10%;
+}
+
+.team2 .icon .fa-twitter {
+    padding: 10px 10px;
+    font-size: 25px;
+    color: rgb(121, 120, 119);
+}
+
+
+.team2 .icon .fa-instagram {
+    padding: 10px 10px;
+    font-size: 25px;
+    color: rgb(121, 120, 119);
+}
+
+.team2 .icon .fa-linkedin {
+    padding: 10px 10px;
+    font-size: 25px;
+    color: rgb(121, 120, 119);
+}
+
+#last {
+    margin-top: 20px;
+}
+
+
+/* CONTACT FORM */
+.con {
+    width: 100%;
+    height: 135vh;
+    background-color: rgb(240, 230, 240);
+    margin-bottom: 0;
+}
+
+.con h3 {
+    margin-bottom: 40px;
+}
+
+.con h1 {
+    font-size: 50px;
+    font-weight: bold;
+    margin-bottom: 10px;
+    text-align: center;
+    padding-top: 8%;
+    margin-top: 50px;
+}
+
+.con .form1 {
+    background-color: white;
+    width: 50%;
+    height: 82vh;
+    margin-left: 25%;
+    padding: 40px 50px;
+    margin-bottom: 5%;
+}
+
+.con .form1 .lname {
+    margin-left: 45%;
+}
+
+.con .form1 .fl {
+    display: flex;
+    width: 97%;
+    margin-top: 4px;
+    margin-bottom: 15px;
+}
+
+input[type="email"] {
+    margin-bottom: 15px;
+}
+
+.con .form1 .sub {
+    margin-bottom: 15px;
+}
+
+.con .form1 .fl .linput {
+    margin-left: 10%;
+}
+
+.con .form1 .fl input {
+    margin: 0px 0px;
+    width: 100%;
+}
+
+.form1 input {
+    width: 90%;
+    border-radius: 20px;
+    border-color: rgb(194, 194, 194);
+    padding: 8px 30px;
+    margin-top: 2%;
+}
+
+.form1 textarea {
+    width: 90%;
+    height: 25vh;
+    border-radius: 20px;
+    border-color: rgb(194, 194, 194);
+    border-style: 0px;
+    padding: 8px 30px;
+    margin-top: 2%;
+}
+
+.btn {
+    background-color: rgb(13, 133, 202);
+    color: white;
+    margin-right: 2%;
+    padding: 7px 28px;
+    border-radius: 20px;
+    border-color: transparent;
+    padding: 12px 25px;
+    margin-top: 3%;
+    margin-left: 38%;
+}
+
+/* FOOTER*/
+.foot {
+    background-color: rgb(68, 68, 68);
+    width: 100%;
+    height: 50vh;
+}
+
+.f1 {
+    width: 18.5%;
+    color: white;
+    border-radius: 7px;
+    padding: 65px 10px;
+    display: inline-block;
+    margin-left: 70px;
+    box-sizing: border-box;
+}
+
+.f11 {
+    position: relative;
+    bottom: 20px;
+    margin-left: 5%;
+}
+
+.f2 {
+    margin-left: 10%;
+}
+
+.f3 {
+    margin-left: 1%;
+    position: relative;
+    bottom: 12px;
+}
+
+.f4 {
+    margin-left: 2%;
+    position: relative;
+    bottom: 12px;
+}
+
+.foot1 {
+    margin-top: 0;
+    margin-bottom: 20px;
+}
+
+.foot .foot1 .f1 .h1 {
+    margin-bottom: 15px;
+    font-size: 16px;
+    font-weight: bold;
+}
+
+.foot .foot1 .f1 p {
+
+    color: rgb(122, 122, 122);
+}
+
+.foot .foot1 .f1 .h2 {
+    margin-bottom: 18px;
+    font-size: 16px;
+    font-weight: bold;
+    margin-left: 7%;
+    margin-top: 25%;
+}
+
+.foot .foot1 .f1 .h4 {
+    color: rgb(122, 122, 122);
+    text-align: center;
+    margin-right: 60%;
+    font-size: 15px;
+    padding: 3.5px 2px;
+}
+
+.foot .foot1 .f1 .h5 {
+    margin-bottom: 18px;
+    font-size: 16px;
+    font-weight: bold;
+    margin-bottom: 30%;
+}
+
+.foot .foot1 .f1 .ficon3 {
+    position: relative;
+    right: 5%;
+    font-size: 1px;
+    position: relative;
+    bottom: 75px;
+}
+
+.foot .foot1 .f1 .ficon3 .fa-facebook,
+.fa-twitter,
+.fa-instagram,
+.fa-whatsapp {
+    color: rgb(121, 120, 119);
+    font-size: 15px;
+    padding: 10px 10px;
+}
+
+.foot .foot1 .f1 .h6 {
+    margin-bottom: 18px;
+    font-size: 16px;
+    font-weight: bold;
+    margin-bottom: 15%;
+}
+
+.foot .foot1 .f1 input {
+    margin-bottom: 15px;
+    border-radius: 15px;
+    padding: 8px 40px;
+    position: relative;
+    bottom: 30px;
+    border-color: transparent;
+}
+
+.foot .foot1 .f1 button {
+    margin-bottom: 10px;
+    border-radius: 15px;
+    position: relative;
+    margin-left: 30%;
+    padding: 5px 11px;
+    border-color: transparent;
+    bottom: 30px;
+    color: white;
+    background-color: rgb(13, 133, 202);
+}
