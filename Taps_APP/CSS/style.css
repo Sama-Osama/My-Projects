@@ -1,0 +1,43 @@
+section {
+    background-color: black;
+    width: 40%;
+    height: 30vh;
+    text-align: center;
+    margin: auto;
+    color: black;
+}
+
+.btns {
+    background-color: antiquewhite;
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    margin-top: 30%;
+
+}
+
+.contents {
+    color: white;
+    padding: 30px;
+    font-size: 25px;
+    margin-top: 5%;
+
+}
+
+.contents div {
+    display: none;
+}
+
+.contents .show {
+    display: block;
+    color: white;
+}
+
+.btns button {
+    padding: 10px 20px;
+    cursor: pointer;
+}
+
+.btns .active {
+    background-color: antiquewhite;
+
+}
