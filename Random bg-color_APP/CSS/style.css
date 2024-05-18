@@ -1,0 +1,21 @@
+.cointainer {
+    text-align: center;
+    margin: auto;
+    margin-top: 20%;
+}
+
+#btn {
+    text-decoration: none;
+    color: white;
+    background-color: rgb(93, 2, 4);
+    padding: 15px 27px;
+    border-radius: 9px;
+    font-style: bold;
+    border-color: transparent;
+    cursor: pointer;
+}
+
+.colorName {
+    font-family: 'Lobster', cursive;
+    font-size: 20px;
+}
