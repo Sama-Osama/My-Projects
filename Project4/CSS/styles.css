@@ -1,0 +1,143 @@
+/* General css */
+* {
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    background-color: rgb(136, 136, 136);
+}
+
+/* navbar */
+
+.navbar {
+    background-color: rgb(0, 0, 0);
+    padding: 20px 0.5px;
+    margin-bottom: 28px;
+    font-size: 18px;
+}
+
+.navbar .navlist li {
+    display: inline-block;
+    color: white;
+    margin-left: 18px;
+}
+
+.navbar .navlist a {
+    text-decoration: none;
+    color: white;
+}
+
+.navbar .navlist a:hover {
+    opacity: 0.7;
+
+}
+
+/* hero */
+.hero {
+    background-image: url(../Images/1.jpg);
+    width: 92%;
+    height: 38vh;
+    background-size: 100% 123vh;
+    background-repeat: no-repeat;
+    border-radius: 9px;
+    margin-left: 68px;
+    position: relative;
+    margin-bottom: 20px;
+    background-position: center;
+}
+
+/* products */
+.products h3 {
+    margin-left: 26%;
+    font-size: 33px;
+    margin-bottom: 50px;
+}
+
+/* product1*/
+.product1 {
+    margin-left: 2%;
+    background-color: black;
+    width: 14%;
+    height: 27vh;
+    padding: 13px 10px;
+    text-align: center;
+    border-radius: 9px;
+    color: white;
+    margin-bottom: 35px;
+}
+
+.product1 .prol-title {
+    margin-bottom: 9px;
+}
+
+.product1 img {
+    width: 80%;
+    height: 15vh;
+    margin-bottom: 4px;
+}
+
+.product1 .pro1-price {
+    margin-bottom: 2px;
+    font-size: 15px;
+}
+
+.product1 .pro1-btn {
+    display: inline-block;
+    text-decoration: none;
+    background-color: white;
+    color: black;
+    padding: 5px 7px;
+    border-radius: 9px;
+    margin-top: 5px;
+}
+
+.product1 .product3 .pro2-btn {
+    display: inline-block;
+    text-decoration: none;
+    background-color: white;
+    color: black;
+    padding: 5px 7px;
+    border-radius: 9px;
+    margin-top: 5px;
+}
+
+/* product 2*/
+.product2 {
+    margin-left: 26%;
+    background-color: black;
+    width: 14%;
+    height: 27vh;
+    padding: 13px 10px;
+    text-align: center;
+    border-radius: 9px;
+    color: white;
+    margin-bottom: 35px;
+}
+
+/* product 3*/
+
+.product3 {
+    margin-left: 52%;
+    background-color: black;
+    width: 14%;
+    height: 27vh;
+    padding: 13px 10px;
+    text-align: center;
+    border-radius: 9px;
+    color: white;
+    margin-bottom: 35px;
+}
+
+/* product 4*/
+
+.product4 {
+    margin-left: 83%;
+    background-color: black;
+    width: 14%;
+    height: 27vh;
+    padding: 13px 10px;
+    text-align: center;
+    border-radius: 9px;
+    color: white;
+}
