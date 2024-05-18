@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Contact_List APP</title>
+    <link rel="stylesheet" href="CSS/bootstrap.min.css">
+    <link rel="stylesheet" href="CSS/all.min.css">
+    <link rel="stylesheet" href="CSS/style.css">
+</head>
+
+<body>
+    <main>
+        <header class="header">
+            <!-- search -->
+            <div class="search_div">
+                <form>
+                    <label for="search">
+                        <i class="fa-solid fa-magnifying-glass"></i>
+                    </label>
+                    <input type="search" id="search" name="search" placeholder="search contact">
+                </form>
+            </div>
+            <!-- Add new person -->
+            <div class="add_div">
+                <button class="addNew">
+                    <i class="fa-solid fa-user-plus"></i>
+                    Add New Contact
+                </button>
+            </div>
+        </header>
+        <!-- Contact Form -->
+        <section class="form">
+            <div class="addNewContact">
+                <i class="fa-solid fa-user-plus"></i>
+                <form action="">
+                    <input type="text" placeholder="Full Name" id="contact_new_name">
+                    <input type="text" placeholder="Phone" id="contact_new_phone">
+                    <input type="email" placeholder="Email Address" id="contact_new_email">
+                    <input type="text" placeholder="Home Address" id="contact_new_address">
+                </form>
+                <button class="save_btn">
+                    <i class="fa-solid fa-floppy-disk"></i>Save
+                </button>
+                <button class="close">
+                    <i class="fa-solid fa-circle-xmark"></i>
+                </button>
+
+
+            </div>
+
+        </section>
+        <!-- table -->
+        <section class="table_section">
+            <table class="table table-striped">
+                <thead>
+                    <tr>
+                        <th><i class="fa-solid fa-id-badge"></i> Id</th>
+                        <th><i class="fa-solid fa-user"></i> Name</th>
+                        <th><i class="fa-solid fa-phone"></i> Phone</th>
+                        <th><i class="fa-solid fa-envelope"></i> Email</th>
+                        <th><i class="fa-solid fa-location-dot"></i> Address</th>
+                        <th><i class="fa-solid fa-file-pen" > Edit</i> </th>
+                        <th><i class="fa-solid fa-trash"> Delete</i> </th>
+                    </tr>
+                </thead>
+                <tbody id="tbody">
+
+                </tbody>
+            </table>
+        </section>
+    </main>
+
+    <script src="JS/bootstrap.min.js"></script>
+    <script src="JS/js.js"></script>
+</body>
+
+</html>
