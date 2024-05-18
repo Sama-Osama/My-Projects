@@ -1,0 +1,42 @@
+.coinatiner {
+    margin-left: 40%;
+    margin-top: 18%;
+}
+
+.btns {
+    margin-top: 20px;
+}
+
+.btn1 {
+    background-color: rgb(64, 139, 202);
+    color: white;
+    padding: 20px 20px;
+    border-radius: 5px;
+    border-color: rgb(64, 139, 202);
+    cursor: pointer;
+
+
+}
+
+.btn2 {
+    background-color: rgb(64, 139, 202);
+    color: white;
+    padding: 20px 20px;
+    border-radius: 5px;
+    border-color: rgb(64, 139, 202);
+    cursor: pointer;
+}
+
+.btn3 {
+    background-color: rgb(64, 139, 202);
+    color: white;
+    padding: 20px 20px;
+    border-radius: 5px;
+    border-color: rgb(64, 139, 202);
+    cursor: pointer;
+}
+
+.count {
+    font-size: 30px;
+    margin-left: 10%;
+}
