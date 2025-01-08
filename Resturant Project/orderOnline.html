@@ -1,0 +1,311 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Restaurant Menu</title>
+    <link rel="stylesheet" href="CSS/order.css">
+    <link rel="stylesheet" href="CSS/style.css">
+    <link rel="stylesheet" href="CSS/all.min.css">
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Dancing+Script&display=swap" rel="stylesheet">
+
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Lilita+One&display=swap" rel="stylesheet">
+
+
+</head>
+
+<body>
+
+
+    <!-- Navigation Bar -->
+    <nav class="nav-bar">
+        <ul class="nav-list">
+            <li><a href="index.html" class="home-icon"><i class="fas fa-home"></i></a></li>
+            <li><a href="about.html">About</a></li>
+            <li><a href="hoursLocation.html">Hours & Locations</a></li>
+            <li><a href="menue.html">Menu</a></li>
+            <li><span>PaPa Restaurant</span></li>
+            <li><a href="account.html">Account</a></li>
+            <li><a href="orderOnline.html">Order Online</a></li>
+            <li><a href="reservation.html">Reservation</a></li>
+        </ul>
+    </nav>
+
+
+    <!-- Menu Container -->
+    <div class="menu-container">
+        <!-- Sandwiches Section -->
+        <div class="menu-section purple-bg">
+            <h2>Sandwiches</h2>
+            <img src="images/istockphoto-521207406-612x612.jpg" alt="Meals" class="section-img">
+
+            <div class="menu-items">
+                <div class="menu-item" onclick="openPopup('Grilled Chicken Sandwich', 12)">
+                    <h3>Grilled Chicken Sandwich</h3>
+                    <p>Tender grilled chicken, lettuce, tomato.</p>
+                    <span>$12</span>
+                </div>
+                <div class="menu-item" onclick="openPopup('Fried Chicken Sandwich', 11)">
+                    <h3>Fried Chicken Sandwich</h3>
+                    <p>Crispy fried chicken, pickles, mayo.</p>
+                    <span>$11</span>
+                </div>
+                <div class="menu-item" onclick="openPopup('Club Sandwich', 13)">
+                    <h3>Club Sandwich</h3>
+                    <p>Bacon, chicken, cheese, lettuce, tomato.</p>
+                    <span>$13</span>
+                </div>
+                <div class="menu-item" onclick="openPopup('BBQ Chicken Sandwich', 12)">
+                    <h3>BBQ Chicken Sandwich</h3>
+                    <p>Chicken with BBQ sauce, onions.</p>
+                    <span>$12</span>
+                </div>
+                <div class="menu-item" onclick="openPopup('Cheesy Melt', 10)">
+                    <h3>Cheesy Melt</h3>
+                    <p>Melted cheese and chicken blend.</p>
+                    <span>$10</span>
+                </div>
+                <div class="menu-item" onclick="openPopup('Spicy Chicken Sandwich', 11)">
+                    <h3>Spicy Chicken Sandwich</h3>
+                    <p>Hot sauce, crispy chicken.</p>
+                    <span>$11</span>
+                </div>
+            </div>
+        </div>
+
+        <!-- Meals Section -->
+        <div class="menu-section purple-bg">
+            <h2>Meals</h2>
+            <img src="images/preview (2).jpg" alt="Meals" class="section-img">
+
+            <div class="menu-items">
+                <div class="menu-item" onclick="openPopup('Family Meal', 40)">
+                    <h3>Family Meal</h3>
+                    <p>Serves 4 with sides.</p>
+                    <span>$40</span>
+                </div>
+                <div class="menu-item" onclick="openPopup('Kids\' Meal', 8)">
+                    <h3>Kids' Meal</h3>
+                    <p>Includes toy and juice.</p>
+                    <span>$8</span>
+                </div>
+                <div class="menu-item" onclick="openPopup('Combo 1', 15)">
+                    <h3>Combo 1</h3>
+                    <p>Chicken sandwich, fries, drink.</p>
+                    <span>$15</span>
+                </div>
+                <div class="menu-item" onclick="openPopup('Combo 2', 14)">
+                    <h3>Combo 2</h3>
+                    <p>Burger, fries, drink.</p>
+                    <span>$14</span>
+                </div>
+                <div class="menu-item" onclick="openPopup('Value Box', 10)">
+                    <h3>Value Box</h3>
+                    <p>3 tenders, fries, biscuit.</p>
+                    <span>$10</span>
+                </div>
+                <div class="menu-item" onclick="openPopup('Party Platter', 55)">
+                    <h3>Party Platter</h3>
+                    <p>For 6 people.</p>
+                    <span>$55</span>
+                </div>
+            </div>
+        </div>
+
+        <!-- Chicken Plates Section -->
+        <div class="menu-section purple-bg">
+            <h2>Chicken Plates</h2>
+            <img src="images/istockphoto-928823336-612x612.jpg" alt="Meals" class="section-img">
+
+            <div class="menu-items">
+                <div class="menu-item" onclick="openPopup('Grilled Chicken Plate', 14)">
+                    <h3>Grilled Chicken Plate</h3>
+                    <p>Served with veggies.</p>
+                    <span>$14</span>
+                </div>
+                <div class="menu-item" onclick="openPopup('Fried Chicken Plate', 13)">
+                    <h3>Fried Chicken Plate</h3>
+                    <p>Crispy fried chicken, sides.</p>
+                    <span>$13</span>
+                </div>
+                <div class="menu-item" onclick="openPopup('BBQ Chicken Plate', 15)">
+                    <h3>BBQ Chicken Plate</h3>
+                    <p>Chicken smothered in BBQ.</p>
+                    <span>$15</span>
+                </div>
+                <div class="menu-item" onclick="openPopup('Chicken & Rice', 12)">
+                    <h3>Chicken & Rice</h3>
+                    <p>Juicy chicken over rice.</p>
+                    <span>$12</span>
+                </div>
+                <div class="menu-item" onclick="openPopup('Spicy Chicken Plate', 14)">
+                    <h3>Spicy Chicken Plate</h3>
+                    <p>Hot sauce glazed chicken.</p>
+                    <span>$14</span>
+                </div>
+                <div class="menu-item" onclick="openPopup('Herb Roasted Chicken', 15)">
+                    <h3>Herb Roasted Chicken</h3>
+                    <p>Oven-roasted chicken.</p>
+                    <span>$15</span>
+                </div>
+            </div>
+        </div>
+
+        <!-- Salads Section -->
+        <div class="menu-section purple-bg">
+            <h2>Salads</h2>
+            <img src="images/istockphoto-169986941-612x612.jpg" alt="Meals" class="section-img">
+
+            <div class="menu-items">
+                <div class="menu-item" onclick="openPopup('Caesar Salad', 10)">
+                    <h3>Caesar Salad</h3>
+                    <p>Grilled chicken, parmesan.</p>
+                    <span>$10</span>
+                </div>
+                <div class="menu-item" onclick="openPopup('Garden Salad', 9)">
+                    <h3>Garden Salad</h3>
+                    <p>Fresh veggies and herbs.</p>
+                    <span>$9</span>
+                </div>
+                <div class="menu-item" onclick="openPopup('Chicken Cobb Salad', 12)">
+                    <h3>Chicken Cobb Salad</h3>
+                    <p>Bacon, egg, blue cheese.</p>
+                    <span>$12</span>
+                </div>
+                <div class="menu-item" onclick="openPopup('Greek Salad', 11)">
+                    <h3>Greek Salad</h3>
+                    <p>Feta, olives, cucumber.</p>
+                    <span>$11</span>
+                </div>
+                <div class="menu-item" onclick="openPopup('Spicy Chicken Salad', 12)">
+                    <h3>Spicy Chicken Salad</h3>
+                    <p>Tossed spicy chicken.</p>
+                    <span>$12</span>
+                </div>
+                <div class="menu-item" onclick="openPopup('Avocado Chicken Salad', 13)">
+                    <h3>Avocado Chicken Salad</h3>
+                    <p>Fresh avocado mix.</p>
+                    <span>$13</span>
+                </div>
+            </div>
+        </div>
+
+        <!-- Wings Section -->
+        <div class="menu-section purple-bg">
+            <h2>Wings</h2>
+            <img src="images/istockphoto-835903320-612x612.jpg" alt="Meals" class="section-img">
+
+            <div class="menu-items">
+                <div class="menu-item" onclick="openPopup('Buffalo Wings', 10)">
+                    <h3>Buffalo Wings</h3>
+                    <p>Classic spicy wings.</p>
+                    <span>$10</span>
+                </div>
+                <div class="menu-item" onclick="openPopup('BBQ Wings', 11)">
+                    <h3>BBQ Wings</h3>
+                    <p>Sweet BBQ flavor.</p>
+                    <span>$11</span>
+                </div>
+                <div class="menu-item" onclick="openPopup('Garlic Parmesan Wings', 12)">
+                    <h3>Garlic Parmesan Wings</h3>
+                    <p>Savory garlic and cheese.</p>
+                    <span>$12</span>
+                </div>
+                <div class="menu-item" onclick="openPopup('Honey Mustard Wings', 11)">
+                    <h3>Honey Mustard Wings</h3>
+                    <p>Sweet and tangy.</p>
+                    <span>$11</span>
+                </div>
+                <div class="menu-item" onclick="openPopup('Spicy Asian Wings', 12)">
+                    <h3>Spicy Asian Wings</h3>
+                    <p>Asian-inspired glaze.</p>
+                    <span>$12</span>
+                </div>
+                <div class="menu-item" onclick="openPopup('Teriyaki Wings', 11)">
+                    <h3>Teriyaki Wings</h3>
+                    <p>Sweet teriyaki sauce.</p>
+                    <span>$11</span>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- Popup -->
+    <div id="popup" class="popup">
+        <div class="popup-content">
+            <h3 id="popup-title"></h3>
+            <p>Enter Quantity:</p>
+            <input type="number" id="popup-quantity" value="1" min="1">
+            <button class="add-btn" onclick="addToCart()">Add to Cart</button>
+            <button class="close-btn" onclick="closePopup()">Close</button>
+        </div>
+    </div>
+
+    <!-- Cart Section -->
+    <div class="cart">
+        <h2>Your Cart</h2>
+        <ul id="cart-items"></ul>
+        <p id="cart-total">Total: $0</p>
+        <button class="order-btn">Order</button>
+    </div>
+
+
+    <!-- JS -->
+    <script>
+        let cart = [];
+        let total = 0;
+
+        function openPopup(itemName, price) {
+            document.getElementById('popup-title').textContent = itemName;
+            document.getElementById('popup').style.display = 'flex';
+            document.getElementById('popup').dataset.price = price;
+            document.getElementById('popup').dataset.name = itemName;
+        }
+
+        function closePopup() {
+            document.getElementById('popup').style.display = 'none';
+        }
+
+        function addToCart() {
+            const name = document.getElementById('popup').dataset.name;
+            const price = parseFloat(document.getElementById('popup').dataset.price);
+            const quantity = parseInt(document.getElementById('popup-quantity').value);
+
+            const cartItem = {
+                name,
+                price,
+                quantity,
+            };
+
+            cart.push(cartItem);
+            total += price * quantity;
+
+            updateCart();
+            closePopup();
+        }
+
+        function updateCart() {
+            const cartList = document.getElementById('cart-items');
+            cartList.innerHTML = '';
+
+            cart.forEach(item => {
+                const li = document.createElement('li');
+                li.textContent = `${item.name} x ${item.quantity} - $${item.price * item.quantity}`;
+                cartList.appendChild(li);
+            });
+
+            document.getElementById('cart-total').textContent = `Total: $${total}`;
+        }
+
+
+    </script>
+</body>
+
+</html>

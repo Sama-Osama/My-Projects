@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Reservation</title>
+    <link rel="stylesheet" href="CSS/style.css">
+    <link rel="stylesheet" href="CSS/all.min.css">
+    <link rel="stylesheet" href="CSS/reservation.css">
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Dancing+Script&display=swap" rel="stylesheet">
+
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Lilita+One&display=swap" rel="stylesheet">
+
+
+</head>
+
+<body>
+    <!-- Navigation Bar -->
+    <nav class="nav-bar">
+        <ul class="nav-list">
+            <li><a href="index.html" class="home-icon"><i class="fas fa-home"></i></a></li>
+            <li><a href="about.html">About</a></li>
+            <li><a href="hoursLocation.html">Hours & Locations</a></li>
+            <li><a href="menue.html">Menu</a></li>
+            <li><span>PaPa Restaurant</span></li>
+            <li><a href="account.html">Account</a></li>
+            <li><a href="orderOnline.html">Order Online</a></li>
+            <li><a href="reservation.html">Reservation</a></li>
+        </ul>
+    </nav>
+
+    <div class="reservation-container">
+        <h2>Reservation</h2>
+        <form id="reservation-form" onsubmit="findTable(event)">
+            <img src="images/getimg_ai_img-zeK9m1FQZmeEhKHjnLfrt-removebg-preview.png" alt="Logo" class="form-logo">
+
+            <div class="form-group">
+                <label for="people">Number of People:</label>
+                <input type="number" id="people" name="people" required>
+            </div>
+            <div class="form-group">
+                <label for="date">Reservation Date:</label>
+                <input type="date" id="date" name="date" required>
+            </div>
+            <button type="submit" class="submit-btn">Find a Table</button>
+        </form>
+    </div>
+
+    <!-- JS -->
+    <script>
+        function findTable(event) {
+            const numberOfPeople = document.getElementById('people').value;
+            const reservationDate = document.getElementById('date').value;
+
+            // Prevent form submission if both fields are not filled
+            if (numberOfPeople && reservationDate) {
+                alert(`Searching for a table for ${numberOfPeople} people on ${reservationDate}`);
+            } else {
+                event.preventDefault(); // Prevent form submission
+                alert('Please fill in both fields');
+            }
+        }
+    </script>
+
+</body>
+
+</html>

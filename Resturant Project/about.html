@@ -1,0 +1,143 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="CSS/about.css">
+    <link rel="stylesheet" href="CSS/all.min.css">
+    <link rel="stylesheet" href="CSS/style.css">
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Dancing+Script&display=swap" rel="stylesheet">
+
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Lilita+One&display=swap" rel="stylesheet">
+
+    <title>About PaPa Restaurant</title>
+
+</head>
+
+<body>
+    <!-- Navigation Bar -->
+    <nav class="nav-bar">
+        <ul class="nav-list">
+            <li><a href="index.html" class="home-icon"><i class="fas fa-home"></i></a></li>
+            <li><a href="about.html">About</a></li>
+            <li><a href="hoursLocation.html">Hours & Locations</a></li>
+            <li><a href="menue.html">Menu</a></li>
+            <li><span>PaPa Restaurant</span></li>
+            <li><a href="account.html">Account</a></li>
+            <li><a href="orderOnline.html">Order Online</a></li>
+            <li><a href="reservation.html">Reservation</a></li>
+        </ul>
+    </nav>
+
+
+    <div class="about-section">
+        <div class="about-description">
+            <h2>Our Story</h2>
+            <p>PaPa Restaurant specializes in mouthwatering chicken dishes that are </p>
+            <p>freshly prepared every day. Founded in 2010, we have grown from a small</p>
+            <p> neighborhood restaurant to a beloved spot known for our delicious menu,</p>
+            <p> excellent service, and inviting atmosphere. Whether you're in the mood for</p>
+            <p> grilled, fried, or roasted chicken, PaPa Restaurant has something for </p>
+            <p>everyone.</p>
+            <p><strong>Founded:</strong> 2010</p>
+        </div>
+        <div class="about-image">
+            <img src="images/getimg_ai_img-zeK9m1FQZmeEhKHjnLfrt-removebg-preview.png" alt="Restaurant Image">
+        </div>
+    </div>
+
+    <!-- Second Section: Team -->
+    <h2 style="margin-top: 300px;font-family:'Dancing Script', serif;">Meet Our Team</h2>
+    <div class="team-section" id="team-section">
+        <!-- Team Member 1 -->
+        <div class="team-member">
+            <img src="images/istockphoto-1623086781-612x612.jpg" alt="Team Member 1">
+            <h3>John Doe</h3>
+            <p>Head Chef - John has been with PaPa Restaurant since its opening and is known for his innovative chicken
+                recipes.</p>
+        </div>
+
+        <!-- Team Member 2 -->
+        <div class="team-member">
+            <img src="images/istockphoto-2030128047-612x612.jpg" alt="Team Member 2">
+            <h3>Jane Smith</h3>
+            <p>Sous Chef - Jane specializes in preparing the perfect sides to complement our famous chicken dishes.</p>
+        </div>
+
+        <!-- Team Member 3 -->
+        <div class="team-member">
+            <img src="images/istockphoto-1634442523-612x612.jpg" alt="Team Member 3">
+            <h3>Emily Johnson</h3>
+            <p>Pastry Chef - Emily crafts our delightful desserts, ensuring every meal ends on a sweet note.</p>
+        </div>
+
+        <!-- Team Member 4 -->
+        <div class="team-member">
+            <img src="images/istockphoto-820376210-612x612.jpg" alt="Team Member 4">
+            <h3>Michael Brown</h3>
+            <p>Restaurant Manager - Michael ensures everything runs smoothly, providing excellent customer service.</p>
+        </div>
+
+        <!-- Team Member 5 -->
+        <div class="team-member">
+            <img src="images/istockphoto-1298088270-612x612.jpg" alt="Team Member 5">
+            <h3>Alice Davis</h3>
+            <p>Front-End Chef - Alice is responsible for grilling and frying chicken to perfection.</p>
+        </div>
+    </div>
+
+    <!-- Footer Section -->
+    <footer class="footer">
+        <div class="footer-content">
+            <div class="footer-logo">
+                <img src="images/getimg_ai_img-zeK9m1FQZmeEhKHjnLfrt-removebg-preview.png" alt="PaPa Restaurant Logo">
+            </div>
+            <div class="footer-social">
+                <a href="https://www.facebook.com" class="social-icon" target="_blank">
+                    <i class="fab fa-facebook"></i>
+                </a>
+                <a href="https://wa.me/yourphonenumber" class="social-icon" target="_blank">
+                    <i class="fab fa-whatsapp"></i>
+                </a>
+                <a href="https://www.instagram.com" class="social-icon" target="_blank">
+                    <i class="fab fa-instagram"></i>
+                </a>
+            </div>
+            <div class="footer-contact">
+                <p>Email: info@paparestaurant.com</p>
+                <p>Phone: +123 456 7890</p>
+                <p>Phone: +987 654 3210</p>
+            </div>
+
+            <div class="footer-description">
+                <p>PaPa Restaurant is your go-to place for the finest and most delicious chicken dishes, cooked to
+                    perfection with love. Enjoy a warm and inviting atmosphere while savoring our signature meals.</p>
+            </div>
+        </div>
+    </footer>
+
+
+    <script>
+        // Function to handle Intersection Observer for the team section
+        const teamSection = document.getElementById('team-section');
+
+        const observer = new IntersectionObserver((entries) => {
+            entries.forEach(entry => {
+                if (entry.isIntersecting) {
+                    teamSection.classList.add('visible');  // Add the 'visible' class when section is in view
+                }
+            });
+        }, { threshold: 0.5 });  // Trigger when 50% of the section is visible
+
+        observer.observe(teamSection);
+    </script>
+</body>
+
+</html>

@@ -1,0 +1,107 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: Arial, sans-serif;
+    background-color: #a66eb7;
+}
+
+.menu-header {
+    text-align: center;
+    padding: 20px;
+    color: white;
+    margin-top: 80px;
+}
+
+.menu-header .logo {
+    width: 150px;
+    height: auto;
+}
+
+.menu-header h1 {
+    margin: 10px 0;
+    font-size: 2.5em;
+    font-family: "Dancing Script", serif;
+
+}
+
+.menu-header h2 {
+    font-size: 1.5em;
+    font-family: "Lilita One", serif;
+
+}
+
+.menu-container {
+    margin-top: 50px;
+    display: flex;
+    flex-wrap: wrap;
+    gap: 20px;
+    justify-content: center;
+    padding: 20px;
+}
+
+.menu-section {
+    display: flex;
+    border: 3px solid #000;
+    border-radius: 8px;
+    overflow: hidden;
+    width: 49%;
+    background-color: white;
+}
+
+.purple-bg {
+    background-color: #9b59b6;
+    color: white;
+}
+
+.white-bg {
+    background-color: #fff;
+    color: black;
+}
+
+.section-content {
+    padding: 20px;
+    flex: 1;
+}
+
+.section-content h2 {
+    margin-bottom: 20px;
+    font-size: 1.5em;
+    font-family: "Dancing Script", serif;
+
+}
+
+.section-content ul {
+    list-style: none;
+}
+
+.section-content ul li {
+    margin-bottom: 10px;
+}
+
+.section-content span {
+    float: right;
+    font-weight: bold;
+}
+
+.menu-section img {
+    width: 164px;
+    height: auto;
+    object-fit: cover;
+}
+
+/* Fade-in effect */
+.menu-section {
+    opacity: 0;
+    transform: translateY(30px);
+    transition: opacity 1s ease-out, transform 1s ease-out;
+}
+
+/* Active class to trigger the fade-in effect */
+.menu-section.active {
+    opacity: 1;
+    transform: translateY(0);
+}

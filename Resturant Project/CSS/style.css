@@ -1,0 +1,320 @@
+/* General Reset */
+html,
+body {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    width: 100%;
+}
+
+/* Navigation Bar */
+.nav-bar {
+    background-color: #c57edb;
+    width: 100%;
+    height: 60px;
+    position: fixed;
+    top: 0;
+    left: 0;
+    z-index: 1000;
+
+}
+
+.nav-list {
+    list-style: none;
+    margin: 0 auto;
+    padding: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100%;
+}
+
+.nav-list li {
+    margin: 0 20px;
+    background-color: #9b7ea5;
+    border-radius: 8px;
+    padding: 10px;
+
+    font-family: "Lilita One", serif;
+    font-weight: 400;
+    font-style: normal;
+
+}
+
+.nav-list li:hover {
+    margin: 0 20px;
+    background-color: #b4aab8;
+    border-radius: 8px;
+    padding: 10px;
+
+    font-family: "Lilita One", serif;
+    font-weight: 400;
+    font-style: normal;
+
+}
+
+.nav-list a {
+    text-decoration: none;
+    color: white;
+    font-size: 18px;
+}
+
+.nav-list span {
+    font-family: "Dancing Script", serif;
+    font-optical-sizing: auto;
+    font-weight: 400;
+    font-style: normal;
+    color: white;
+    font-size: 25px;
+    font-weight: bold;
+
+}
+
+
+
+/* Slider */
+.slider {
+    position: relative;
+    width: 100%;
+    /* height: 500px;  */
+    height: 600px;
+    margin-top: 60.29px;
+    overflow: hidden;
+    background-color: #c57edb;
+
+}
+
+/* Slides Container */
+.slides {
+    display: flex;
+    transition: transform 0.5s ease-in-out;
+    width: 300%;
+}
+
+/* Individual Slide */
+.slide {
+    min-width: 100%;
+    position: relative;
+}
+
+.slide img {
+    width: 33.39%;
+    height: 612px;
+    object-fit: cover;
+    /* Ensures images scale proportionally */
+    display: block;
+}
+
+
+/* Arrows for Navigation */
+.arrow {
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    background-color: rgba(0, 0, 0, 0.5);
+    color: white;
+    border: none;
+    font-size: 2rem;
+    cursor: pointer;
+    padding: 10px;
+    z-index: 10;
+}
+
+.arrow.left {
+    left: 10px;
+}
+
+.arrow.right {
+    right: 10px;
+}
+
+.arrow:hover {
+    background-color: rgba(0, 0, 0, 0.8);
+}
+
+
+
+/* Welcome Container */
+.welcome-container {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 100px 50px;
+    margin-top: 50px;
+    opacity: 0;
+    /* Start hidden */
+    transform: translateY(50px);
+    /* Start with slight downward shift */
+    transition: opacity 1s ease, transform 1s ease;
+    /* Smooth transition */
+
+}
+
+.welcome-container.visible {
+    opacity: 1;
+    transform: translateY(0);
+    /* Bring the container to its normal position */
+}
+
+/* Left side: Image */
+.welcome-container .image img {
+    width: 80%;
+    border-radius: 10px;
+    height: 100vh;
+    margin-left: 100px;
+}
+
+/* Right side: Welcome Text */
+.welcome-container .welcome {
+    width: 45%;
+    margin-right: 100px;
+}
+
+/* Style for the welcome section text */
+.welcome-container h1 {
+    font-size: 36px;
+    color: #333;
+    font-family: "Dancing Script", serif;
+
+}
+
+.welcome-container p {
+    font-size: 18px;
+    color: #777;
+}
+
+
+/* Special Dishes Section */
+.special-dishes {
+    margin-bottom: 50px;
+    padding: 10px 20px;
+    background-color: #f9f9f9;
+    text-align: center;
+    opacity: 0;
+    /* Initially hidden */
+    transform: translateY(50px);
+    /* Move the section down */
+    transition: opacity 1s ease, transform 1s ease;
+    /* Smooth transition */
+}
+
+.special-dishes.show {
+    opacity: 1;
+    /* Show when scrolled into view */
+    transform: translateY(0);
+    /* Reset position */
+}
+
+.special-dishes h2 {
+    font-size: 2rem;
+    margin-bottom: 30px;
+    color: #333;
+    font-family: "Dancing Script", serif;
+
+}
+
+.dish-container {
+    display: flex;
+    justify-content: space-around;
+    gap: 30px;
+    flex-wrap: wrap;
+}
+
+.dish {
+    width: 30%;
+    background-color: #fff;
+    border-radius: 10px;
+    overflow: hidden;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    opacity: 0;
+    /* Initially hidden */
+    transition: opacity 1s ease-out;
+}
+
+.dish.show {
+    opacity: 1;
+    /* Show the dish gradually */
+}
+
+.dish img {
+    width: 100%;
+    height: 200px;
+    object-fit: cover;
+}
+
+.dish-description {
+    padding: 15px;
+    text-align: left;
+}
+
+.dish-description h3 {
+    font-size: 1.5rem;
+    color: #333;
+    margin-bottom: 10px;
+}
+
+.dish-description p {
+    font-size: 1rem;
+    color: #777;
+}
+
+
+/* Footer Styles */
+.footer {
+    background-color: #c57edb;
+    padding: 30px 20px;
+    color: #fff;
+    text-align: center;
+}
+
+.footer-content {
+    max-width: 1200px;
+    margin: 0 auto;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.footer-logo img {
+    width: 150px;
+    height: auto;
+}
+
+.footer-social {
+    display: flex;
+    gap: 20px;
+    justify-content: center;
+    margin-left: 90px;
+}
+
+.social-icon {
+    color: #fff;
+    font-size: 24px;
+    transition: color 0.3s ease;
+}
+
+.social-icon:hover {
+    color: #f1f1f1;
+}
+
+.footer-contact,
+.footer-description {
+    flex: 1 1 200px;
+    margin: 10px 0;
+}
+
+.footer-contact p,
+.footer-description p {
+    margin: 5px 0;
+    font-size: 16px;
+}
+
+
+
+.footer-description {
+    max-width: 350px;
+    margin: 0 auto;
+    font-size: 14px;
+    font-style: italic;
+}

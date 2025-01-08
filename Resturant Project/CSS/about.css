@@ -1,0 +1,90 @@
+body {
+    font-family: Arial, sans-serif;
+    background-color: #f4f4f4;
+    color: #333;
+    text-align: center;
+    padding: 20px;
+}
+
+.logo {
+    width: 150px;
+    height: auto;
+}
+
+.about-section {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-top: 100px;
+    margin-left: 100px;
+
+}
+
+.about-description {
+    width: 45%;
+    text-align: left;
+}
+
+.about-description h2 {
+    font-size: 2em;
+    margin-bottom: 10px;
+    font-family: "Dancing Script", serif;
+
+}
+
+.about-description p {
+    font-size: 1.2em;
+}
+
+.about-image img {
+    width: 400px;
+    height: auto;
+    border-radius: 8px;
+    margin-right: 100px;
+}
+
+.team-section {
+    margin-top: 50px;
+    display: flex;
+    flex-wrap: wrap;
+    gap: 20px;
+    justify-content: center;
+    opacity: 0;
+    /* Initially hidden */
+    transform: translateY(30px);
+    /* Initially moved down */
+    transition: opacity 1s ease-out, transform 1s ease-out;
+    /* Add transition */
+}
+
+.team-section.visible {
+    opacity: 1;
+    /* Show the section */
+    transform: translateY(0);
+    /* Move the section into view */
+}
+
+.team-member {
+    width: 20%;
+    text-align: center;
+
+}
+
+.team-member img {
+    width: 150px;
+    height: 150px;
+    border-radius: 50%;
+    object-fit: cover;
+}
+
+.team-member h3 {
+    font-size: 1.5em;
+    margin-top: 10px;
+    font-family: "Dancing Script", serif;
+
+}
+
+.team-member p {
+    font-size: 1.1em;
+    margin-top: 5px;
+}
